@@ -4,7 +4,7 @@ import '../models/earnings_data.dart';
 
 class ApiService {
   final String baseUrl = 'https://api.api-ninjas.com/v1/';
-  final String apiKey = '8CE7itGY+DVDiDv5AXWINw==GoTVNvVLXEBWyvd3';
+  final String apiKey = ''//Your API key
 
   Future<List<EarningsData>> fetchEarningsData(String ticker) async {
     final response = await http.get(Uri.parse('$baseUrl/earningscalendar?ticker=$ticker'),
